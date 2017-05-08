@@ -1,0 +1,556 @@
+/* fonts */
+
+@font-face {
+  font-family: 'PF Din Light';
+  src: url('../fonts/PFDinTextCompPro-Light.eot');
+  src: url('../fonts/PFDinTextCompPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/PFDinTextCompPro-Light.woff2') format('woff2'), url('../fonts/PFDinTextCompPro-Light.woff') format('woff'), url('../fonts/PFDinTextCompPro-Light.ttf') format('truetype'), url('../fonts/PFDinTextCompPro-Light.svg#PFDinTextCompPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Din Medium';
+  src: url('../fonts/PFDinTextCompPro-Medium.eot');
+  src: url('../fonts/PFDinTextCompPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/PFDinTextCompPro-Medium.woff2') format('woff2'), url('../fonts/PFDinTextCompPro-Medium.woff') format('woff'), url('../fonts/PFDinTextCompPro-Medium.ttf') format('truetype'), url('../fonts/PFDinTextCompPro-Medium.svg#PFDinTextCompPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueBold.woff2') format('woff2'), url('../fonts/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold.ttf') format('truetype'), url('../fonts/BebasNeueBold.svg#BebasNeueBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/BebasNeueRegular.eot');
+  src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueRegular.woff2') format('woff2'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype'), url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.light {
+  font-family: 'PF Din Light', sans-serif;
+}
+
+.medium {
+  font-family: 'PF Din Medium', sans-serif;
+}
+
+.bold {
+  font-family: 'Bebas Neue Bold', sans-serif;
+}
+
+.regular {
+  font-family: 'Bebas Neue Regular', sans-serif;
+}
+
+/* bsic settings */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.scrollup {
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5) url(../img/up.png) no-repeat center center;
+  cursor: pointer;
+  display: none;
+}
+
+/* header */
+
+section#header {
+  min-height: 44rem;
+  color: #fff;
+  background: url(../img/header-bg.jpg) top center;
+  background-size: cover;
+}
+
+section#header .row {
+  flex-direction: column;
+}
+
+.nav {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  align-self: flex-end;
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.025rem;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title-main {
+  font-family: 'Bebas Neue Bold', sans-serif;
+  position: relative;
+  margin: 10rem 1rem 0 1rem;
+  padding: 0.8rem 8rem 0 5rem;
+  align-self: center;
+  text-align: center;
+  font-size: 8rem;
+  letter-spacing: 1.4rem;
+  border: 0.7rem solid #fff;
+}
+
+.title-main:after {
+  position: absolute;
+  content: "3D";
+  font-size: 4rem;
+  letter-spacing: 0;
+  top: 12%;
+  right: 8%;
+}
+
+.title-explain {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  margin-top: 0.72rem;
+  align-self: center;
+  font-size: 4rem;
+}
+
+/* about of me */
+
+section#about {
+  color: #454545;
+}
+
+section#about .row {
+  min-height: 40rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.myphoto {
+  min-width: 17rem;
+  min-height: 17rem;
+  align-self: center;
+  flex-basis: 17rem;
+  margin: 3rem;
+  background: url(../img/myphoto.jpg) no-repeat;
+  border-radius: 50%;
+}
+
+.manifest {
+  font-family: 'PF Din Light', sans-serif;
+  flex-basis: 60rem;
+  flex-grow: 1;
+  font-size: 2.4rem;
+  text-align: justify;
+  text-indent: 4rem;
+  margin: 3rem;
+}
+
+/* my work */
+
+section#mywork .row {
+  margin: 0;
+}
+
+.work-item {
+  position: relative;
+  flex-grow: 1;
+  min-height: 30rem;
+}
+
+.work-item:hover .cover-img {
+  display: block;
+}
+
+.cover-img {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.item-1 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.item-5 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.item-6 {
+  background: url(../img/maket1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* order */
+
+section#order {
+  margin: 10rem 0;
+}
+
+section#order .row {
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  margin: 0 0 1.5rem 0;
+  font-size: 2.4rem;
+  color: #424242;
+}
+
+.form-group {
+  margin: 0.5rem 0;
+}
+
+.form-stiker {
+  position: relative;
+  width: 6rem;
+  height: 5rem;
+  background: #ff4444;
+  border-radius: 0.6rem 0 0 0.6rem;
+  text-align: center;
+}
+
+.form-stiker i {
+  position: absolute;
+  top: 16%;
+  left: 37%;
+  font-size: 3.2rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.form-stiker:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+  border: 25px solid rgba(0, 0, 0, 0);
+  border-left-color: #ff4444;
+}
+
+.form-label {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 2.4rem;
+  color: #424242;
+  flex-basis: 10rem;
+  margin: 0 0 0 4rem;
+}
+
+.form-control {
+  font-family: 'PF Din Light', sans-serif;
+  font-size: 2.4rem;
+  flex-basis: 50rem;
+  padding: 0 1rem;
+  height: 4.8rem;
+  border: 1px solid #B5B5B5;
+  border-radius: 5px;
+}
+
+.form-btn {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  position: relative;
+  text-align: center;
+  vertical-align: baseline;
+  line-height: 5rem;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 2.4rem;
+  flex-basis: 20rem;
+  height: 5rem;
+  background: #ff4444;
+  border: none;
+  cursor: pointer;
+}
+
+.form-btn:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 100%;
+  border: 25px solid rgba(0, 0, 0, 0);
+  border-right-color: #ff4444;
+}
+
+.form-btn:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+  border: 25px solid rgba(0, 0, 0, 0);
+  border-left-color: #ff4444;
+}
+
+/* feedback */
+
+section#feedback {
+  background: #F0F0F0;
+  padding: 5rem 0;
+}
+
+section#feedback .row {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.customer {
+  margin: 5rem;
+}
+
+.customer-avatar {
+  flex-basis: 17rem;
+  max-width: 17rem;
+  max-height: 17rem;
+  margin: 2rem 0;
+  border-radius: 50%;
+}
+
+.customer-feedback {
+  font-family: 'PF Din Light', sans-serif;
+  position: relative;
+  flex-basis: 60rem;
+  font-size: 2.4rem;
+  text-indent: 4rem;
+  text-align: justify;
+  margin: 0 5rem;
+}
+
+.customer-feedback:before {
+  content: '';
+  width: 4rem;
+  height: 3.3rem;
+  top: 0;
+  left: 0;
+  margin: -2rem;
+  position: absolute;
+  background-image: url(../img/quote-open.png);
+}
+
+.customer-feedback:after {
+  content: '';
+  width: 4rem;
+  height: 3.3rem;
+  bottom: 0;
+  right: 0;
+  margin: -2rem;
+  position: absolute;
+  background-image: url(../img/quote-close.png);
+}
+
+/* footer */
+
+section#footer {
+  background-color: #4D4D4D;
+}
+
+section#footer .row {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 5rem 0;
+}
+
+section#footer .row a {
+  font-size: 3rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
