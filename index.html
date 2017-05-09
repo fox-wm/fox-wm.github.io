@@ -38,20 +38,73 @@
 
 	<section id="mywork">
 		<div class="row">
-			<a href="#" class="work-item item-1"><div class="cover-img"></div></a>
-			<a href="#" class="work-item item-2"><div class="cover-img"></div></a>
-			<a href="#" class="work-item item-3"><div class="cover-img"></div></a>
+			<!-- Screen 1 -->
+			<div id="#example1" onclick="$('#exampleModal1').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal1">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
+			<!-- Screen 2 -->
+			<div id="#example2" onclick="$('#exampleModal2').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal2">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
+			<!-- Screen 3 -->
+			<div id="#example3" onclick="$('#exampleModal3').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal3">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
 		</div>
 		<div class="row">
-			<a href="#" class="work-item item-4"><div class="cover-img"></div></a>
-			<a href="#" class="work-item item-5"><div class="cover-img"></div></a>
-			<a href="#" class="work-item item-6"><div class="cover-img"></div></a>
+			<!-- Screen 4 -->
+			<div id="#example4" onclick="$('#exampleModal4').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal4">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
+			<!-- Screen 5 -->
+			<div id="#example5" onclick="$('#exampleModal5').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal5">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
+			<!-- Screen 6 -->
+			<div id="#example6" onclick="$('#exampleModal6').arcticmodal()" class="work-item item-1">
+				<div class="cover-img"></div>
+			</div>
+			<div style="display: none;">
+				<div class="box-modal" id="exampleModal6">
+					<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<img src="img/maket1full.jpg" alt="">
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section id="order">
-
-			<form role="form" action="send.php" method="post" class="wrapper">
+			<form action="send.php" method="post" class="wrapper">
 				<div class="form-group row">
 					<span class="form-title">Заполните простую форму и я свяжусь с вами</span>
 				</div>
@@ -68,34 +121,36 @@
 				<div class="form-group row">
 					<div class="form-stiker"><i class="fa fa-at" aria-hidden="true"></i></div>
 					<label for="inputEmail" class="form-label">e-mail</label>
-					<input type="email" class="form-control" id="inputEmail" name="email" placeholder="это поле обязательно" required>
+					<input type="email" class="form-control" id="inputEmail" name="email" placeholder="это поле обязательно">
 				</div> 
 				<div class="form-group row">
-					<div type="submit" class="form-btn">Оставить заявку</div>
+					<button type="submit" id="#example7" onclick="$('#exampleModal7').arcticmodal()" class="form-btn">Оставить заявку</button>
+					<div style="display: none;">
+						<div class="box-modal-thanks" id="exampleModal7">
+							<div class="box-modal_close arcticmodal-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+							<h2>Спасибо!</h2>
+							<p>Я обязательно свяжусь с вами в ближайшее время.</p>
+						</div>
+					</div>
 				</div> 
 			</form>
-
 	</section>
 
 	<section id="feedback">
 		<div class="wrapper">
 			<div class="row">
-
 				<div class="customer row">
 					<img src="img/customer1.jpg" class="customer-avatar">
 					<div class="customer-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nisi excepturi maiores autem, omnis doloribus accusantium aliquam dolorem fuga provident.</div>
 				</div>
-
 				<div class="customer row">
 					<img src="img/customer2.jpg" class="customer-avatar">
 					<div class="customer-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam doloribus consequuntur enim iste dolorum iusto odit, deleniti ipsum assumenda beatae fugiat sunt earum, eum quod repellendus id optio molestiae praesentium?</div>
 				</div>
-
 				<div class="customer row">
 					<img src="img/customer3.jpg" class="customer-avatar">
 					<div class="customer-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tempore explicabo numquam sunt magnam unde.</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -103,18 +158,11 @@
 	<section id="footer">
 		<div class="wrapper">
 			<div class="row">
-
 				<a href="https://vk.com/matveevoleg_photo"><i class="fa fa-vk" aria-hidden="true"></i></a>
 				<a href="https://www.facebook.com/matveev3d"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 				<a href="https://web.telegram.org/#/im?p=@OlegSANDr"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 				<a href="skype:oleg.sand.r"><i class="fa fa-skype" aria-hidden="true"></i></a>
 				<a href="mailto:mail@matveev3d.ru"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-
-				<!-- <img src="img/html5.png" alt="HTML5">
-				<img src="img/css3.png" alt="CSS3">
-				<img src="img/gulp.png" alt="Gulp">
-				<img src="img/less.png" alt="LESS">
-				<img src="img/npm.png" alt="npm"> -->
 			</div>
 		</div>
 	</section>
@@ -123,6 +171,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="js/up-btn.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 </body>
 </html>

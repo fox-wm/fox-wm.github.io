@@ -191,6 +191,90 @@ html {
   display: none;
 }
 
+/* modal */
+
+.arcticmodal-overlay,
+.arcticmodal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+
+*:first-child + html .arcticmodal-container {
+  height: 100%;
+}
+
+.arcticmodal-container_i {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.arcticmodal-container_i2 {
+  padding: 2.4rem;
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+}
+
+.arcticmodal-error {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.box-modal {
+  position: relative;
+  max-width: 100rem;
+  max-height: 75rem;
+  box-shadow: 0 0 0 1rem rgba(153, 153, 153, 0.3);
+  border-radius: 0.1rem;
+}
+
+.box-modal-thanks {
+  position: relative;
+  padding: 5rem 10rem;
+  background: #fff;
+  font-family: 'PF Din Light', sans-serif;
+  color: #ff4444;
+  font-size: 3.6rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.box-modal-thanks h2 {
+  font-family: 'Bebas Neue Bold', sans-serif;
+  font-size: 5rem;
+}
+
+.box-modal-thanks i {
+  color: #ff4444;
+}
+
+.box-modal_close {
+  position: absolute;
+  right: 1rem;
+  top: 0.6rem;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.box-modal_close:hover {
+  color: #fff;
+}
+
 /* header */
 
 section#header {
@@ -262,20 +346,19 @@ section#header .row {
 
 section#about {
   color: #454545;
+  padding: 15rem 0;
 }
 
 section#about .row {
-  min-height: 40rem;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .myphoto {
+  flex-basis: 17rem;
   min-width: 17rem;
   min-height: 17rem;
-  align-self: center;
-  flex-basis: 17rem;
   margin: 3rem;
   background: url(../img/myphoto.jpg) no-repeat;
   border-radius: 50%;
@@ -283,8 +366,7 @@ section#about .row {
 
 .manifest {
   font-family: 'PF Din Light', sans-serif;
-  flex-basis: 60rem;
-  flex-grow: 1;
+  flex-basis: 70rem;
   font-size: 2.4rem;
   text-align: justify;
   text-indent: 4rem;
@@ -394,6 +476,7 @@ section#order .row {
   width: 0;
   height: 0;
   left: 100%;
+  top: 0;
   border: 25px solid rgba(0, 0, 0, 0);
   border-left-color: #ff4444;
 }
@@ -438,6 +521,7 @@ section#order .row {
   width: 0;
   height: 0;
   right: 100%;
+  top: 0;
   border: 25px solid rgba(0, 0, 0, 0);
   border-right-color: #ff4444;
 }
@@ -448,6 +532,7 @@ section#order .row {
   width: 0;
   height: 0;
   left: 100%;
+  top: 0;
   border: 25px solid rgba(0, 0, 0, 0);
   border-left-color: #ff4444;
 }
